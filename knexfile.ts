@@ -1,5 +1,5 @@
 import { Knex } from "knex";
-import { env } from "./src/env";
+import { env } from "./src/env/index";
 
 export const config: Knex.Config = {
   client: env.DATABASE_CLIENT,
