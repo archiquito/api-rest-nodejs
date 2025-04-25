@@ -54,7 +54,7 @@ export async function transcationsRoutes(app: FastifyInstance) {
       amount: z.number(),
       type: z.enum(["credit", "debit"]),
     });
-    console.log(request.body);
+
     const { title, amount, type } = createTransactionBodySchema.parse(
       request.body
     );
